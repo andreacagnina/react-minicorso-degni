@@ -1,5 +1,7 @@
 import { use, useState } from "react";
 import Counter from "./components/Counter.jsx";
+import Input from "./components/input.jsx";
+import Box from "./components/Box.jsx";
 import './index.css'
 
 function App() {
@@ -18,7 +20,7 @@ function App() {
   }
 
   return (
-    <div>
+    <>
       <h1>{appTitle}</h1>
       <div>
         <button
@@ -48,7 +50,11 @@ function App() {
         <button onClick={changePoint}>Incrementa X</button>
 
       </div>
-    </div>
+      <div>
+        <Input />
+      </div>
+      <div className="box-container"><Box bgColor="lightpink" width={200} height={200}><h1>MyBox</h1></Box></div>
+    </>
   );
 }
 

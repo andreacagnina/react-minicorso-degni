@@ -9,3 +9,20 @@
   margin-top: 50px;
   background-color: lightgreen;
 }
+.input {
+  padding: 15px;
+  margin-top: 50px;
+  background-color: lightgreen;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+}
+
+.users {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
